@@ -4,9 +4,9 @@
 ## Obsah
 
 * [Instalace MicroPython](#instalace-micropython)
-* [Programování](#programov-n-)
-* [Hello, Pico!](#hello--pico-)
-* [Rozložení pinů](#rozlo-en--pin-)
+* [Programování](#programování)
+* [Hello, Pico!](#hello--pico!)
+* [Rozložení pinů](#rozložení-pinů)
 + [RPI_Pico_example_codes](#rpi-pico-example-codes)
 
 ## Instalace MicroPython
