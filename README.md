@@ -5,7 +5,7 @@
 
 * [Instalace MicroPython](#instalace-micropython)
 * [Programování](#programování)
-* [Hello, Pico!](#hello--pico!)
+* [Hello, Pico!](#hello,-pico!)
 * [Rozložení pinů](#rozložení-pinů)
 + [RPI_Pico_example_codes](#rpi-pico-example-codes)
 
