@@ -5,7 +5,7 @@
 
 * [Instalace MicroPython](#instalace-micropython)
 * [Programování](#programování)
-* [Hello, Pico!](#hello,-pico!)
+* [Hello, Pico!](#hello)
 * [Rozložení pinů](#rozložení-pinů)
 + [RPI_Pico_example_codes](#rpi-pico-example-codes)
 
@@ -35,7 +35,7 @@ Pokud vše proběhlo správně, tak by dole v konzoli měl běžet interpreter M
 Odteď můžeme s Pico interagovat buď přímo přes konzoli, anebo psát skripty a uploadovat je.
 
 
-## Hello, Pico!
+## Hello, Pico! {#hello}
 
 ```
 >>> print("Hello, Pico!")
