@@ -35,7 +35,7 @@ Pokud vše proběhlo správně, tak by dole v konzoli měl běžet interpreter M
 Odteď můžeme s Pico interagovat buď přímo přes konzoli, anebo psát skripty a uploadovat je.
 
 
-## Hello, Pico! [test]{#hello}
+## Hello, Pico!
 
 ```
 >>> print("Hello, Pico!")
@@ -62,12 +62,72 @@ while True:
 
 Po přepsání stačí kliknout na zelené tlačítko v horní liště a skript se spustí. Když ho budeme chtít zastavit, stačí kliknout na červené tlačítko zastavit.
 
+## Stmívání LED
+
+Ke stmívání LED se používá PWM neboli pulzně šířková modulace.
+
+![PWM](images/pwm.png)
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FPWM-signal-with-its-two-basic-time-periods_fig4_271437313&psig=AOvVaw10SVsBpZIkFZGVLsW6Senh&ust=1626953737873000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDa_JiJ9PECFQAAAAAdAAAAABAE
+
+```python
+from machine import PWM, Pin
+from utime import sleep_us
+
+LED_PIN = 25
+BLINK_FREQUENCY = 1
+PWM_FREQUENCY = 200 # nastavime tak aby lidske oko nedokazalo rozpoznat blikani
+                    # hranice je okolo 120 Hz muzete vyzkouset :)
+
+# inicializace trid
+led = Pin(LED_PIN)
+pwm = PWM(led, PWM_FREQUENCY)
+
+duty = 0
+direction = 1
+
+while True:
+    # overeni jetli je treba obratit smer
+    if duty >= 255:
+        direction = -1
+    elif duty <= 0:
+        direction = 1
+
+    # nastaveni nove hodnoty "duty"
+    duty += direction
+    pwm.duty_u16(duty * duty)
+
+    # nechceme aby se smycka vykonavala nekontrolovane rychle,
+    # to by zpusobilo jen zdanlive ztmaveni
+    sleep_us(1_000_000 // BLINK_FREQUENCY // 255 // 2)
+```
+
+## Čtení z vestavěného teploměru
+
+Teplota se bude vypisovat do konzole.
+
+```python
+from machine import ADC
+from time import sleep
+
+# 3.3 V = referenční napětí, 65535 = největší číslo, které můžeme uložit do 16 bytů
+CONVERSION_FACTOR = 3.3 / 65535
+
+temp_sensor = ADC(4)
+
+while True:
+    reading = temp_sensor.read_u16() * conversion_factor
+    temperature = 27 - (reading - 0.718 ) / 0.001721
+    print("Voltage: " + str(reading) + " V, Temperature: " + str(temperature) + " °C")
+    sleep(2)
+
+```
+
 ## Rozložení pinů
 
 ![RPi pico pin layout](images/pico_layout.png)
 
-### RPI_Pico_example_codes
-dalsi materialy
+
+## Zdroje a další materiály
 
 [Datasheet](https://datasheets.raspberrypi.org/pico/pico-datasheet.pdf)
 
