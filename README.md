@@ -35,7 +35,7 @@ Pokud vše proběhlo správně, tak by dole v konzoli měl běžet interpreter M
 Odteď můžeme s Pico interagovat buď přímo přes konzoli, anebo psát skripty a uploadovat je.
 
 
-## Hello, Pico! {#hello}
+## Hello, Pico! [test]{#hello}
 
 ```
 >>> print("Hello, Pico!")
