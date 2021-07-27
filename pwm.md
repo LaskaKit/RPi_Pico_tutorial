@@ -38,3 +38,7 @@ while True:
     # to by zpusobilo jen ztmaveni
     sleep_us(1_000_000 // BLINK_FREQUENCY // 255 // 2)
 ```
+
+<div class="footer" style="display: flex; justify-content: space-around">
+    <a href="hello.md">Příprava vývojového prostředí</a>
+</div>

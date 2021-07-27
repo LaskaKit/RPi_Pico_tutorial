@@ -32,3 +32,8 @@ MicroPython v1.16 on 2021-06-18; Raspberry Pi Pico with RP2040
 Type "help()" for more information.
 >>>
 ```
+
+<div class="footer" style="display: flex; justify-content: space-around">
+    <a href="README.md">Obsah</a>
+    <a href="hello.md">První program</a>
+</div>

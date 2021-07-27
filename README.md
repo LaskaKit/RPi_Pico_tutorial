@@ -20,3 +20,7 @@
 [Python SDK](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf)
 
 [MicroPython](https://micropython.org/)
+
+<div class="footer" style="display: flex; justify-content: space-around">
+    <a href="hello.md">Příprava vývojového prostředí</a>
+</div>

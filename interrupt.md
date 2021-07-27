@@ -40,3 +40,7 @@ while True:
     led.toggle()
     sleep_us(freq_to_delay(freq))
 ```
+
+<div class="footer" style="display: flex; justify-content: space-around">
+    <a href="hello.md">Příprava vývojového prostředí</a>
+</div>

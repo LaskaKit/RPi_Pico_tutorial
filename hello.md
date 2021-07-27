@@ -20,3 +20,7 @@ while True:
 ```python
 print("Hello, Pico!")
 ```
+
+<div class="footer" style="display: flex; justify-content: space-around">
+    <a href="hello.md">Příprava vývojového prostředí</a>
+</div>
