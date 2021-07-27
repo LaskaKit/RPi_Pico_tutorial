@@ -18,10 +18,12 @@ Kdyby vám přišlo neustále odpojování a připojování Pica kvůli každé 
 Po instalaci spusťte Thonny a v nástrojové liště postupujte tímto způsobem:
 
 1.	Běh -> Vybrat interpreter…
-![img](images/thonny_interpreter_setting_1.png)
+
+    ![img](images/thonny_interpreter_setting_1.png)
 
 2.	V dialogovém okně vyberte MicroPython (Raspberry Pi Pico), automatickou detekci portu můžete ponechat.
-![img](images/thonny_interpreter_setting_2.png)
+
+    ![img](images/thonny_interpreter_setting_2.png)
 
 Pokud vše proběhlo správně, tak byste dole v konzoli měli vidět něco takového:
 
