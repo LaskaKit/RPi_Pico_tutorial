@@ -20,6 +20,10 @@ Po instalaci spusťte Thonny a v nástrojové liště postupujte tímto způsobe
 1.	Běh -> Vybrat interpreter…
 2.	V dialogovém okně vyberte MicroPython (Raspberry Pi Pico), automatickou detekci portu můžete ponechat.
 
+![img](images/thonny_interpreter_setting_1.png)
+
+![img](images/thonny_interpreter_setting_2.png)
+
 Pokud vše proběhlo správně, tak byste dole v konzoli měli vidět něco takového:
 
 ```
