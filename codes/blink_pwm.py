@@ -4,8 +4,8 @@ from utime import sleep_us
 
 LED_PIN = 25
 BLINK_FREQUENCY = 1
-PWM_FREQUENCY = 200 # frekvence se nastavuje tak aby lidske oko nedokazalo rozpoznat blikani
-                    # hranice je okolo 120 Hz muzete to vyzkouset :)
+PWM_FREQUENCY = 200 # nastavime tak aby lidske oko nedokazalo rozpoznat blikani
+                    # hranice je okolo 120 Hz muzete vyzkouset
 
 led = Pin(LED_PIN)
 pwm = PWM(led)

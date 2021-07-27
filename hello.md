@@ -20,5 +20,3 @@ while True:
 ```python
 print("Hello, Pico!")
 ```
-
-Po přepsání stačí kliknout na zelené tlačítko v horní liště a skript se spustí. Když ho budeme chtít zastavit, stačí kliknout na červené tlačítko zastavit.
