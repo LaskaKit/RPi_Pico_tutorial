@@ -24,7 +24,7 @@ duty = 0
 direction = 1
 
 while True:
-    # overeni jetli je treba obratit smer
+    # overeni jetli se ztmavuje nebo rozsveci
     if duty >= 255:
         direction = -1
     elif duty <= 0:
