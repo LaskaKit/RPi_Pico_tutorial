@@ -1,6 +1,6 @@
 ## Stmívání LED
 
-RPi Pico má 16 PWM kanálů
+RPi Pico má 16 PWM kanálů.
 
 Nšjčastějším využitím PWM je regulace výkonu, například stmívání LED. Ukážeme si jak pomocí PWM stmívat vestavěnou LED.
 
