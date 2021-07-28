@@ -18,6 +18,9 @@ while True:
     sleep(2)
 ```
 
-<div class="footer" style="display: flex; justify-content: space-around">
-    <a href="hello.md">Příprava vývojového prostředí</a>
-</div>
+### Rozcestník
+* [Příprava vývojového prostředí](priprava.md)
+* [První program](hello.md)
+* [ADC](adc.md)
+* [PWM](pwm.md)
+* [Přerušení](interrupt.md)
