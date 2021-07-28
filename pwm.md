@@ -40,5 +40,5 @@ while True:
 ```
 
 <div class="footer" style="display: flex; justify-content: space-around">
-    <a href="hello.md">Příprava vývojového prostředí</a>
+    <a href="README.md">Obsah</a>
 </div>
