@@ -1,5 +1,7 @@
 ## Rozblikání vestavěné LED
 
+Jedním z prvních kroků při seznamování se s novým hardware je rozblikání LED. K RPi Pico nemusíme žádnou zapojovat, má jednu zabudovanou.
+
 ```python
 # modul machine slouzi k ovladani hardware
 # pro rozblikani LED budeme potrebovat tridu Pin
@@ -16,6 +18,8 @@ while True:
 ```
 
 ## Hello, Pico!
+
+Dalším krokem bývá vypsání "Hello, World!" přes USB serial nebo UART. Pokud používate Thonny IDE a jste připojeni RPi Pico tak stačí do konzole napsat:
 
 ```python
 print("Hello, Pico!")
