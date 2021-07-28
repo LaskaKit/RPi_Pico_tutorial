@@ -33,7 +33,9 @@ Type "help()" for more information.
 >>>
 ```
 
-<div class="footer" style="display: flex; justify-content: space-around">
-    <a href="README.md">Obsah</a>
-    <a href="hello.md">První program</a>
-</div>
+### Rozcestník
+* [Příprava vývojového prostředí](priprava.md)
+* [První program](hello.md)
+* [ADC](adc.md)
+* [PWM](pwm.md)
+* [Přerušení](interrupt.md)
