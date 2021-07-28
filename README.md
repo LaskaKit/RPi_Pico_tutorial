@@ -1,13 +1,13 @@
 
 # Začínáme s Raspberry Pi Pico
 
-## Obsah
-
-* [Příprava prostředí](instalace.md)
+## Rozcestník
+* [Příprava vývojového prostředí](priprava.md)
 * [První program](hello.md)
-* [PWM](pwm.md)
 * [ADC](adc.md)
-* [Interrupt](interrupt.md)
+* [PWM](pwm.md)
+* [Přerušení](interrupt.md)
+
 
 ## Rozložení pinů
 
@@ -20,7 +20,3 @@
 [Python SDK](https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf)
 
 [MicroPython](https://micropython.org/)
-
-<div class="footer" style="display: flex; justify-content: space-around">
-    <a href="hello.md">Příprava vývojového prostředí</a>
-</div>
