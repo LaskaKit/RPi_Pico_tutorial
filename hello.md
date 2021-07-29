@@ -17,6 +17,17 @@ while True:
     sleep(1)
 ```
 
+LED můžeme rozblikat i pomocí třídy `Timer`, která využívá hardwarový časovač:
+
+```python
+from machine import Pin, Timer
+
+led = Pin(25, Pin.OUT)
+
+tim.init(freq=1, mode=Timer.PERIODIC, callback=lambda _: led.toggle())
+```
+
+
 ## Hello, Pico!
 
 Dalším krokem bývá vypsání "Hello, World!" přes USB serial nebo UART. Pokud používate Thonny IDE a jste připojeni RPi Pico tak stačí do konzole napsat:

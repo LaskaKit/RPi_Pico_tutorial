@@ -36,7 +36,7 @@ while True:
 ```
 
 Čísla, která se objevují ve výpočtu nejsou náhodná, vyplývají z vlastností senzoru.
-Pří 27 °C je napětí 0,706 V a s každým stupněm navíc se sníží o 1,72 mV.
+Při 27 °C je napětí 0,706 V a zvýšení teploty o 1 °C odpovídá úbytku napětí o velikosti 1,721 mV.
 
 ### Rozcestník
 * [Příprava vývojového prostředí](priprava.md)
