@@ -2,12 +2,12 @@ from machine import Pin
 from utime import sleep_ms
 
 
-DELAY = 100  # ms
-DOT = 1
-DASH = 3
-SPACE_BETWEEN_SYMBOLS = 1
-SPACE_BETWEEN_LETTERS = 3
-SPACE_BETWEEN_WORDS = 7
+DELAY = 100                # casova jednotka v ms [cj], urcuje rychlost
+DELAY_DOT = 1 * DELAY      # tecka trva 1 cj
+DELAY_DASH = 3 * DELAY     # carka trva 2 cj
+DELAY_SYMBOLS = 1 * DELAY  # prodleva mezi jednotlivymi symboly je 1 cj
+DELAY_LETTERS = 3 * DELAY  # prodleva mezi pismeny jsou 3 cj
+DELAY_WORDS = 7 * DELAY    # prodleva mezi slovy je 7 cj
 
 table = {
     'a': '.-',
@@ -49,36 +49,36 @@ def blink(time):
 def blink_letter(letter):
     for item in table[letter]:
         if item == '.':
-            blink(DELAY * DOT)
+            blink(DELAY_DOT)
         elif item == '-':
-            blink(DELAY * DASH)
-        sleep_ms(DELAY * SPACE_BETWEEN_SYMBOLS)
-            
+            blink(DELAY_DASH)
+        sleep_ms(DELAY_SYMBOLS)
+
 
 def blink_morse(string):
     for letter in string.lower():
         if letter == ' ':
-            sleep_ms(DELAY * SPACE_BETWEEN_WORDS - DELAY * SPACE_BETWEEN_LETTERS)
+            sleep_ms(DELAY_WORDS - DELAY_LETTERS)
         else:
             blink_letter(letter)
-            sleep_ms(DELAY * SPACE_BETWEEN_LETTERS - DELAY * SPACE_BETWEEN_SYMBOLS)
-       
-       
+            sleep_ms(DELAY_LETTERS - DELAY_SYMBOLS)
+
+
 def make_morse_string(string):
     morse_string = ''
     for letter in string.lower():
         if letter == ' ':
             morse_string += '/ '
         else:
-            morse_string += table[letter] + ' '   
+            morse_string += table[letter] + ' '
     return morse_string
-    
+
 
 led = Pin(25, Pin.OUT)
 
-sentence = 'sos'
+sentence = 'by Makers for Makers'
 
-while True:    
+while True:
     print(sentence)
     print(make_morse_string(sentence))
     blink_morse(sentence)
