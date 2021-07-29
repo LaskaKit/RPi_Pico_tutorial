@@ -2,7 +2,7 @@ from machine import Pin
 from utime import sleep_ms
 
 
-DELAY = 100                # casova jednotka v ms [cj], urcuje rychlost
+DELAY = 100                # casova jednotka v ms, urcuje rychlost
 DELAY_DOT = 1 * DELAY      # tecka trva 1 cj
 DELAY_DASH = 3 * DELAY     # carka trva 2 cj
 DELAY_SYMBOLS = 1 * DELAY  # prodleva mezi jednotlivymi symboly je 1 cj
