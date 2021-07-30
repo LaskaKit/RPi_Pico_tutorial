@@ -39,3 +39,4 @@ Type "help()" for more information.
 * [ADC](adc.md)
 * [PWM](pwm.md)
 * [Přerušení](interrupt.md)
+* [Morseovka](morse.md)

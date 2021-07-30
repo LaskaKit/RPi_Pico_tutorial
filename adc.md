@@ -44,3 +44,4 @@ Při 27 °C je napětí 0,706 V a zvýšení teploty o 1 °C odpovídá úbytku 
 * [ADC](adc.md)
 * [PWM](pwm.md)
 * [Přerušení](interrupt.md)
+* [Morseovka](morse.md)

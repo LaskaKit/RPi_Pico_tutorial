@@ -7,6 +7,7 @@
 * [ADC](adc.md)
 * [PWM](pwm.md)
 * [Přerušení](interrupt.md)
+* [Morseovka](morse.md)
 
 
 ## Rozložení pinů

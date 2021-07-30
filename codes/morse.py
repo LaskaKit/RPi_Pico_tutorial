@@ -81,5 +81,7 @@ sentence = 'by Makers for Makers'
 while True:
     print(sentence)
     print(make_morse_string(sentence))
-    blink_morse(sentence)
     print()
+
+    sleep_ms(DELAY_WORDS - DELAY_LETTERS)
+    blink_morse(sentence)

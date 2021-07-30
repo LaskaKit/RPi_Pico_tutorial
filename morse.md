@@ -2,7 +2,7 @@
 
 Zajímavou úlohou na procvičení může být program, který převede text do morseovy abecedy a pomocí LED zobrazí.
 
-Abyste nemuseli dlouze přepisovat morzeovu abecedu do programu, připravili jsme pro vás šablonu.
+Abyste nemuseli dlouze přepisovat morzeovu abecedu do programu, připravili jsme pro vás šablonu s abecedou a příslušnými prodlevami.
 
 ```python
 DELAY = 100                # casova jednotka v ms, urcuje rychlost
