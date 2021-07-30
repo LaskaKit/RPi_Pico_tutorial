@@ -22,7 +22,7 @@
 * 16x PWM
 * 8x PIO (programovatelné input/output piny)
 
-## Zdroje a další materiály
+## Zdroje a další užitečné materiály
 
 [Datasheet](https://datasheets.raspberrypi.org/pico/pico-datasheet.pdf)
 
@@ -31,3 +31,5 @@
 [MicroPython](https://micropython.org/)
 
 [RPi Pico MicroPython examples](https://github.com/raspberrypi/pico-micropython-examples)
+
+[CircuitPython](https://circuitpython.org/)
